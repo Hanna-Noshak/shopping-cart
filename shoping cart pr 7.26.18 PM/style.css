@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #0284c7;
+  --secondaryColor: #e0f2fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGray: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6b3;
+}
+
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "lato", sans-serif;
+  background-color: var(--bodyColor);
+  position: relative;
+}
+
+.navbar {
+  background-color: var(--secondaryColor);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-center {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.menu-icon {
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.nav-title {
+  color: var(--mainBlack);
+}
+
+.cart-btn {
+  color: var(--primaryColor);
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-btn i,
+.menu-icon i {
+  font-size: 1.5rem;
+}
+
+.cart-items {
+  position: absolute;
+  color: var(--mainRed);
+  background-color: #a5f3fc;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.765rem;
+  top: -8px;
+  right: -8px;
+}
+
+/* end of navbar */
+.section-title {
+  margin: 2rem 0;
+}
+
+.products {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-center {
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3.5rem;
+}
+
+.product {
+  background-color: var(--mainWhite);
+  padding-bottom: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.product-img {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 20px 20px 0 0;
+}
+
+.product-desc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.1rem;
+}
+
+.product-price {
+  color: var(--primaryColor);
+}
+
+.product-title {
+  color: var(--mainBlack);
+}
+
+.add-to-cart {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  font-weight: bolder;
+  padding: 12px 40px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
